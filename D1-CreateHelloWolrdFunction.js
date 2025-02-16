@@ -25,4 +25,4 @@
         }
     }
 
-const f = createHelloWorld;
+const f = createHelloWorld();
