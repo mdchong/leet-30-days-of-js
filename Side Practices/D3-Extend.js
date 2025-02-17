@@ -121,11 +121,3 @@ const queue = taskQueue();
 queue.addTask(() => console.log("Task 1"));
 queue.addTask(() => console.log("Task 2"));
 queue.processQueue(); // Should log "Task 1" and "Task 2"
-
-
-// Event Emitter
-// Write a simple eventEmitter function that stores event handlers and allows you to trigger events. Example:
-
-const emitter = eventEmitter();
-emitter.on("click", () => console.log("Clicked"));
-emitter.trigger("click"); // Should log "Clicked"
