@@ -18,3 +18,19 @@
     // onceFn(5, 7, 4); // 140
     // onceFn(2, 3, 6); // undefined, fn was not called
     // onceFn(4, 6, 8); // undefined, fn was not called
+
+
+var once = function(fn) {
+    let hasBeenCalled = false;
+    let result;
+
+    return function(...args) {
+        if (!hasBeenCalled) {
+            result = fn(...args);
+            hasBeenCalled = true;
+            return result;
+        } else {
+            return undefined;
+        }
+    }
+}
