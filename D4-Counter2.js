@@ -36,3 +36,6 @@ console.log(counter.increment());
 console.log(counter.increment()); // 7
 console.log(counter.reset()); // 5
 console.log(counter.decrement()); // 4
+
+
+// Returning functions in objects
