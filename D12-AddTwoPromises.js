@@ -24,6 +24,13 @@
  */
 
 var addTwoPromises = async function(promise1, promise2) {
+    let [val1, val2] = await Promise.all([promise1, promise2]);
+    // Promise.all([promise1, promise2]) -> Waits for both promises to resolve
+        // Returns an array: Destructure to get individual values
+    // await -> Suspends execution until all promises resolve 
+        // Then we will need async
+
+    return val1 + val2;
     
 };
 
